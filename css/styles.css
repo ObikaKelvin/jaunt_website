@@ -508,6 +508,10 @@ button.primary-button {
     .feat-card .inside h3 {
         font-size: 3.2rem;
     }
+
+    .feat-card .inside {
+        min-height: 30rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -568,5 +572,14 @@ button.primary-button {
 
     #team .team-container .member-card:not(:last-child) {
         margin-bottom: 6rem;
+    }
+
+    .ft-icon {
+        max-width: 13rem;
+        margin-bottom: -14rem !important;
+    }
+
+    .feat-card .inside {
+        padding-top: 95px;
     }
 }
