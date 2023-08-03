@@ -540,7 +540,7 @@ button.primary-button {
     }
 
     #contact .flex-2 {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -581,5 +581,17 @@ button.primary-button {
 
     .feat-card .inside {
         padding-top: 95px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-nav {
+        justify-content: center;
+    }
+
+    #banner .flex-2-item {
+        text-align: center !important;
     }
 }
