@@ -63,6 +63,7 @@ h2 {
     font-size: 6.8rem;
     font-weight: 700;
 }
+
 h3 {
     font-size: 4.2rem;
     font-weight: 700;
@@ -109,6 +110,8 @@ p {
     text-decoration: none;
     padding: 12px 40px;
     border-radius: 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
     transition: all 0.3s ease;
 }
 .primary-button:hover {
@@ -126,7 +129,7 @@ p {
 header#header {
     padding: 30px 0 10px;
     background-image: var(--background-gradient-top);
-    min-height: 100vh;
+    margin-bottom: 4rem;
 }
 #logo {
     max-width: 165px;
@@ -180,7 +183,6 @@ header .cta-nav:hover {
 main#main-content {
     text-align: center;
     padding-top: 0;
-    margin-top: -140px;
 }
 #features {
     padding-bottom: 60px;
@@ -214,9 +216,6 @@ main#main-content {
     margin-bottom: 20px;
 }
 .feat-card .ft-icon {
-    
-    background-image: linear-gradient(to bottom, #F35F4B, #F89D5C);
-    padding: 40px;
     box-sizing: border-box;
     border-radius: 50%;
     position: relative;
@@ -227,28 +226,22 @@ main#main-content {
     z-index: 2;
     margin-bottom: -80px;
 }
-.feat-card .ft-icon img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 1;
-}
-.feat-card .ft-icon:before {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    z-index:0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+
+.card-icon {
+    width: 100%;
+    height: auto;
 }
 
 #video {
     padding: 40px 0 100px;
+}
+
+#video .side-margin p {
+    margin-bottom: 4rem;
+}
+
+.video-content {
+    max-width: 100%;
 }
 
 #emojis {
@@ -314,11 +307,12 @@ main#main-content {
     justify-content: center;
     flex-wrap: wrap;
     padding: 80px 0 50px;
+    align-items: center;
 }
 #team .team-container .member-card {
-    width: calc(100% / 4);
-    padding: 0 0 60px;
+    padding: 0 30px 60px;
 }
+
 .member-card:nth-child(1) .circle-default {
     background-image: url(../assets/images/sebastian.jpg);
 }
@@ -449,6 +443,11 @@ main#main-content {
     padding-bottom: 100px;
 
 }
+
+#mockup-slider h2 {
+    margin-bottom: 4rem;
+}
+
 #mockup-slider p {
     max-width: 800px;
     margin: 30px auto;
@@ -463,6 +462,7 @@ form {
     display: block;
     text-align: left;
     max-width: 600px;
+    margin: 0 auto;
 }
 form > div {
     margin: 10px 0 20px;
@@ -505,11 +505,21 @@ button.primary-button {
 }
 
 @media only screen and (max-width: 1380px) {
-    
+    .feat-card .inside h3 {
+        font-size: 3.2rem;
+    }
 }
 
 @media only screen and (max-width: 1024px) {
-    
+    .features-container {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .features-container .feat-card {
+        max-width: 75rem;
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -524,8 +534,39 @@ button.primary-button {
     html {
         font-size: 50%;
     }
+
+    #contact .flex-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .flex-2 .flex-2-item {
+        width: 100%;
+    }
+
+    #contact .flex-2 .flex-2-item h3 {
+        margin-bottom: 4rem;
+    }
 }
 
 @media only screen and (max-width: 560px) {
-    
+    #emojis .emoji-container {
+        flex-direction: column;
+    }
+
+    .emoji-cards {
+        margin-bottom: 4rem;
+    }
+
+    h2 {
+        font-size: 4.8rem;
+    }
+
+    #team .team-container .member-card {
+        padding: 0;
+    }
+
+    #team .team-container .member-card:not(:last-child) {
+        margin-bottom: 6rem;
+    }
 }
