@@ -316,30 +316,30 @@ main#main-content {
 }
 
 .member-card:nth-child(1) .circle-default {
-    background-image: url(../assets/images/sebastian.jpg);
+    background-image: url(../assets/images/sebastian.png);
 }
 .member-card:nth-child(2) .circle-default {
-    background-image: url(../assets/images/steph.jpg);
+    background-image: url(../assets/images/stephanie.png);
 }
 .member-card:nth-child(3) .circle-default {
-    background-image: url(../assets/images/milla.jpg);
+    background-image: url(../assets/images/sirimon.png);
 }
 .member-card:nth-child(4) .circle-default {
-    background-image: url(../assets/images/zarah.jpg);
+    background-image: url(../assets/images/zarah.png);
 }
 .member-card:nth-child(5) .circle-default {
-    background-image: url(../assets/images/lucas.jpg);
+    background-image: url(../assets/images/lucas.png);
 }
 .member-card:nth-child(6) .circle-default {
-    background-image: url(../assets/images/obika.jpg);
+    background-image: url(../assets/images/kenechukwu.png);
 }
 .member-card:nth-child(7) .circle-default {
-    background-image: url(../assets/images/nismath.jpg);
+    background-image: url(../assets/images/nismath.png);
 }
 
 
 /* placeholder images only */
-.member-card:nth-child(1) .circle-default:hover {
+/* .member-card:nth-child(1) .circle-default:hover {
     background-image: url(../assets/images/sebastian_2.jpg);
 }
 .member-card:nth-child(2) .circle-default:hover {
@@ -359,7 +359,7 @@ main#main-content {
 }
 .member-card:nth-child(7) .circle-default:hover {
     background-image: url(../assets/images/nismath_2.jpg);
-}
+} */
 
 .circle-default {
     /* background-image: url(https://placehold.co/250/png); */
@@ -396,9 +396,14 @@ main#main-content {
     flex-direction: column;
     justify-content: center;
 }
+
+.member-details.member-active > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
 .member-details.member-active .more-details {
-    
     visibility: visible;
+    display: block;
 }
 .member-details.member-active .more-details p {
     color: var(--white);
@@ -443,6 +448,7 @@ main#main-content {
 }
 .more-details {
     visibility: hidden;
+    display: none;
 }
 
 #mockup-slider {
