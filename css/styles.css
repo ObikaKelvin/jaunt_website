@@ -243,6 +243,12 @@ main#main-content {
 }
 
 .video-content {
+    max-width: 89.2rem;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.gif-content {
     max-width: 100%;
 }
 
