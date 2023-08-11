@@ -322,30 +322,30 @@ main#main-content {
 }
 
 .member-card:nth-child(1) .circle-default {
-    background-image: url(../assets/images/sebastian.png);
+    background-image: url(../assets/images/sebastian.jpg);
 }
 .member-card:nth-child(2) .circle-default {
-    background-image: url(../assets/images/stephanie.png);
+    background-image: url(../assets/images/steph.jpg);
 }
 .member-card:nth-child(3) .circle-default {
-    background-image: url(../assets/images/sirimon.png);
+    background-image: url(../assets/images/milla.jpg);
 }
 .member-card:nth-child(4) .circle-default {
-    background-image: url(../assets/images/zarah.png);
+    background-image: url(../assets/images/zarah.jpg);
 }
 .member-card:nth-child(5) .circle-default {
-    background-image: url(../assets/images/lucas.png);
+    background-image: url(../assets/images/lucas.jpg);
 }
 .member-card:nth-child(6) .circle-default {
-    background-image: url(../assets/images/kenechukwu.png);
+    background-image: url(../assets/images/obika.jpg);
 }
 .member-card:nth-child(7) .circle-default {
-    background-image: url(../assets/images/nismath.png);
+    background-image: url(../assets/images/nismath.jpg);
 }
 
 
 /* placeholder images only */
-/* .member-card:nth-child(1) .circle-default:hover {
+.member-card:nth-child(1) .circle-default:hover {
     background-image: url(../assets/images/sebastian_2.jpg);
 }
 .member-card:nth-child(2) .circle-default:hover {
@@ -365,7 +365,7 @@ main#main-content {
 }
 .member-card:nth-child(7) .circle-default:hover {
     background-image: url(../assets/images/nismath_2.jpg);
-} */
+}
 
 .circle-default {
     /* background-image: url(https://placehold.co/250/png); */
@@ -474,6 +474,10 @@ main#main-content {
 
 #contact {
     background-image: var(--background-gradient-bottom);
+}
+
+#contact .side-margin > * {
+    margin-bottom: 3rem;
 }
 
 form {
